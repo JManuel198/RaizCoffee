@@ -1,0 +1,25 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /*Colores*/
+    --color-primary: rgb(35, 31, 32);
+    --color-bg: rgb(254, 248, 245);
+    --color-text: rgb(255, 255, 255);
+    --color-text-muted: rgb(35, 31, 32);
+
+    --font-sans: Inter;
+    --font-size-sm: 0.5rem; /*Footer*/
+    --font-size-base: 0.75rem; /*Párrafos*/
+    --font-size-lg: 1.5rem; /*Logo*/
+    --font-size-xl: 3rem; /*Titulos*/
+
+    /*Espaciados*/
+    --spacing-sm: 1.25rem; /*20px*/
+    --spacing-md: 2.50rem; /*40px*/
+    --spacing-xl: 7.25rem; /*120px*/
+}
+
