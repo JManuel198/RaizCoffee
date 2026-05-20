@@ -13,18 +13,20 @@
 
     --font-style-base: Satoshi;
     --font-style-title: Switzer;
-    --font-size-sm: 0.5rem; /*Footer*/
-    --font-size-base: 0.75rem; /*Párrafos*/
+    --font-size-sm: 0.75rem; /*Footer*/
+    --font-size-base: 0.90rem; /*Párrafos*/
     --font-size-lg: 1.5rem; /*Logo*/
-    --font-size-xl: 3rem; /*Titulos*/
+    --font-size-xl: 3.5rem; /*Titulos*/
 
     /*Espaciados*/
     --spacing-sm: 1.25rem; /*20px*/
     --spacing-md: 2.50rem; /*40px*/
-    --spacing-xl: 7.25rem; /*120px*/
+    --spacing-lg: 4rem; /*64px*/
+    --spacing-xl: 7.25rem; /*116px*/
+    --spacing-xxl: 12.5rem; /*200px*/
 
     /*Bordes*/
-    --border-sm: 1rem; /*16px*/
+    --radius-pill: 2rem; /*32px*/
 }
 
 .navbar__container {
@@ -36,6 +38,15 @@
     align-items: center;
 }
 
+.navbar__logo {
+    color: var(--color-text);
+    font-size: var(--font-size-lg);
+    font-family: var(--font-style-title);
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+}
+
 .navbar__links {
     width: 300px;
     display: flex;
@@ -44,15 +55,76 @@
     list-style: none;
 }
 
+.navbar__links a {
+    color: var(--color-text);
+    font-size: var(--font-size-base);
+    font-family: var(--font-style-base);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.navbar__links a:hover {
+    text-decoration: underline;
+}
+
 .navbar__btn-wrapper {
     width: 300px;
     display: flex;
     justify-content: end;
 }
 
-.btn--primary {
-    padding: 8px 25px 7px;
+.btn {
+    padding: 5px 26px;
     width: auto;
     display: inline-block;
-    border-radius: var(--border-sm);
+    border-radius: var(--radius-pill);
+    border: 1.5px solid var(--color-text);
+    color: var(--color-text);
+    font-size: var(--font-size-base);
+    font-family: var(--font-style-base);
+    font-weight: 700;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.header {
+    min-height: 100vh;
+    background-image: url('../assets/img/coffee_bartender.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    /*Empujamos todo el contenido hacia abajo*/
+    display: flex;
+    flex-direction: column;
+}
+
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-sm);
+    max-width: 490px;
+}
+
+.hero__container {
+    margin-top: auto;  /* empuja solo este elemento al fondo */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: var(--spacing-md) var(--spacing-xxl);
+    }
+
+.hero__title {
+    color: var(--color-text);
+    font-size: var(--font-size-xl);
+    font-family: var(--font-style-title);
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.hero__desc {
+    color: var(--color-text);
+    font-size: var(--font-size-base);
+    font-family: var(--font-style-base);
+    font-weight: 600;
 }
