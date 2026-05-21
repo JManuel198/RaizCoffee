@@ -306,13 +306,11 @@
 
 .footer__copyright-wrapper {
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
 .footer__links-wrapper {
     display: flex;
-    flex-direction: row;
     justify-content: end;
     align-items: center;
     max-width: 750px;
