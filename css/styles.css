@@ -22,6 +22,7 @@
     --font-size-xxl: 3.5rem; /*Titulos*/
 
     /*Espaciados*/
+    --spacing-xs: 0.5rem; /*8px*/
     --spacing-sm: 1.25rem; /*20px*/
     --spacing-md: 2.50rem; /*40px*/
     --spacing-lg: 4rem; /*64px*/
@@ -177,7 +178,7 @@
 }
 
 .content-rewards__img {
-    width: 650px;
+    width: 550px;
     height: 550px;
     margin: var(--spacing-lg) var(--spacing-xl) var(--spacing-lg) var(--spacing-sm);
 }
@@ -185,4 +186,50 @@
 .svg__arrow {
     width: 14px;
     height: 10px;
+}
+
+/*Seccion shop*/
+.content-shop {
+    background-image: url('../assets/img/coffe_client.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: var(--spacing-xl) 0;
+}
+
+.content-shop__info {
+    height: 420px;
+    width: 1220px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    margin: 0 auto;
+}
+
+.content-shop__title {
+    color: var(--color-text);
+    font-size: var(--font-size-xl);
+    font-family: var(--font-style-title);
+    font-weight: 700;
+    line-height: 0.9;
+}
+
+.content-shop__desc{
+    color: var(--color-text);
+    font-size: var(--font-size-md);
+    font-family: var(--font-style-base);
+    font-weight: 400;
+}
+
+.content-shop__link {
+    color: var(--color-text);
+    font-size: var(--font-size-sm);
+    font-family: var(--font-style-base);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.content-shop__link:hover{
+    text-decoration: underline;
 }
