@@ -197,8 +197,8 @@
 }
 
 .content-shop__info {
-    height: 420px;
-    width: 1220px;
+    min-height: 450px;
+    max-width: 1300px;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -232,4 +232,8 @@
 
 .content-shop__link:hover{
     text-decoration: underline;
+}
+
+.content-shop__link .svg__arrow path {
+    fill: var(--color-text);
 }
