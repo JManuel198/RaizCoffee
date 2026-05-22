@@ -35,7 +35,6 @@
 
 /*Navbar*/
 .navbar {
-    background-color: var(--color-primary);
     position: sticky;
     z-index: 100;
 }
