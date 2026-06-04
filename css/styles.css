@@ -59,6 +59,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navbar.scrolled .navbar__container {
+    border-bottom-color: var(--color-text-muted);
 }
 
 .navbar__logo {
@@ -119,8 +125,9 @@
 }
 
 .navbar.scrolled .btn {
+    background-color: var(--color-text-muted);
     border-color: var(--color-text-muted);
-    color: var(--color-text-muted);
+    color: var(--color-text);
 }
 
 /* ===========================
